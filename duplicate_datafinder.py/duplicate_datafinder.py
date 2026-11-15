@@ -116,3 +116,7 @@ def find_duplicats(file_name: str = None, option: int= None, output_file: str= "
     else:
         # Test Case 2 Output
         print("No duplicates found.")
+
+
+if __name__ == "__main__":
+    find_duplicats()
