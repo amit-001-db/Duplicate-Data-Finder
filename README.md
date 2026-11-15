@@ -11,23 +11,24 @@ The tool supports two modes:
 ## Project Structure
 
 ```
-duplicate_datafinder.py/
-├── duplicate_datafinder.py    # Main program file
-├── run_tests.py               # Test runner executing all test cases
-├── test_cases/                # Sample input text files for test cases
-│   ├── tc1_exact_duplicates.txt
-│   ├── tc2_no_duplicates.txt
-│   ├── tc3b_empty.txt
-│   └── tc4_case_and_spaces.txt
-├── screenshots/               # Terminal screenshots for each test case
+Duplicate-Data-Finder/
+├── duplicate_datafinder.py/
+│   ├── duplicate_datafinder.py    # Main program file
+│   ├── run_tests.py               # Test runner executing all test cases
+│   └── test_cases/                # Sample input text files for test cases
+│       ├── tc1_exact_duplicates.txt
+│       ├── tc2_no_duplicates.txt
+│       ├── tc3b_empty.txt
+│       └── tc4_case_and_spaces.txt
+├── screenshots/                   # Terminal screenshots for each test case
 │   ├── test_case_1.png
 │   ├── test_case_2.png
 │   ├── test_case_3a.png
 │   ├── test_case_3b.png
 │   ├── test_case_4.png
 │   └── all_tests_summary.png
-├── README.md                  # Project documentation
-└── summary.md                 # Summary of implementation and test results
+├── README.md                      # Project documentation
+└── summary.md                     # Detailed test case report with screenshots
 ```
 
 ---
@@ -103,12 +104,15 @@ def find_duplicats(file_name: str = None, option: int = None, output_file: str =
 
 ---
 
-## Running the Tests
+## Test Verification and Screenshots
 
-To run the automated test suite and verify all test cases:
+All test cases are documented with individual console execution screenshots in [summary.md](summary.md).
+
+### Overall Test Suite Execution
+![All Tests Summary](screenshots/all_tests_summary.png)
+
+To run the automated test suite locally:
 
 ```bash
 python run_tests.py
 ```
-
-All test cases will execute and verify output correctness against the requirements. Screenshots for each test case are available in the `screenshots/` directory and documented in `summary.md`.
